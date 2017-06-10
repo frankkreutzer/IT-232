@@ -1,0 +1,36 @@
+<table bgcolor='white'>
+	<tr>
+		<td align='center'>
+		    <td width='100%'><h1>Maintenance Links</h1></td>
+        </td>
+	</tr>
+	<tr>
+		<td align='center'>
+			<td width='100%'><b><%= flash[:success] %></b></td>
+		</td>
+	</tr>
+</table>
+
+<table border=1 align='center'>
+  <thead>
+    <tr>
+      <th><%= link_to "Reports", reports_reports_path %></th>
+	  <th><%= link_to "Clients Database", clients_path %></th>
+	  <th><%= link_to "Users Database", users_path %></th>
+      <th><%= link_to "Products Database", products_path %></th>
+	  <th><%= link_to "Sales Database", sales_path %></th>
+	  <th><%= link_to "Clients and Products Association", showclientproducts_clientnamein_path %></th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td>Navigates to the Reports page</td>
+		<td>Navigates to the Clients database functions</td>
+		<td>Navigates to the Users database functions</td>
+        <td>Navigates to the Products database functions</td>
+		<td>Navigates to the Sales database functions</td>
+		<td>Navigates to the Clients and Products Association Functions</td>
+      </tr>
+  </tbody>
+</table>

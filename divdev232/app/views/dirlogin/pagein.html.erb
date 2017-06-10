@@ -1,0 +1,15 @@
+<h2>The Maintenance Functions are restricted to authorized users only.  Please login below.</h2>
+<%= form_tag(dirlogin_pageout_path, :controller => "dirlogin", :action => "pageout", :method => "post") %>
+<p>
+<label for="name">User ID:</label><br>
+<%= text_field_tag :userid, params[:userid] %>
+</p>
+
+<p>
+<label for="password">Password:</label><br>
+<%= password_field_tag :password, params[:password] %>
+</p>
+
+<b><%= flash[:alert] %><b><br>
+
+<%= submit_tag "login" %>

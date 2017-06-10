@@ -1,0 +1,9 @@
+<h1 align="center">These are the Products for <%= @client_name %> </h1>
+
+  <table width=50% border = 1 align="center">
+      <tr> <th> Product Name </th><th> Product Image </th>
+          <% @product_list.each do |m| %>
+          <tr> <td align="center"> <%= m.productname  %> </td><td align='center'><%= image_tag m.productimg, size: "100x100" %></td>
+</tr>
+      <% end %>
+  </table>

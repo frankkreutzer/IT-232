@@ -1,0 +1,20 @@
+<table bgcolor='#E8E8E8'>
+	<tr>
+		<td align='center'>
+		<%= link_to (image_tag 'logo.png', size: "70x70"), home_index_path %></td>
+		<td width='80%' align='center'><h1>Divergent Development</h1></td>
+		<td width='20%' align='center'>
+				<%= form_tag :action => 'search', :controller=>"home" do %>
+						<%= text_field_tag 'searchinput' %>
+						<%= submit_tag 'Search'%>
+				<% end %>
+		</td>
+	</tr>
+</table>
+
+<div id="menu">
+    <ul>
+		<li><%= link_to "Catalog", home_catalog_path %></li>
+		<li><%= link_to "Maintenance", dirlogin_pagein_path%></li>
+	</ul>
+</div>

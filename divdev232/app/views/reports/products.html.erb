@@ -1,0 +1,23 @@
+<table>
+	<tr>
+		<td align='center'>
+		    <td width='100%' align='center'><h1>Our Products</h1></td>
+        </td>
+	</tr>
+</table>
+
+<table border="1" align="center">
+	<tr>
+		<th> Product Name </th>
+		<th> Description </th>
+        <th> Price </th>
+	</tr>
+
+<% @productlist.each do |p| %>
+	<tr>
+		<td> <%= p.productname %> </td>
+        <td> <%= p.description %> </td>
+        <td> <%= number_to_currency(p.price) %> </td>
+	</tr>
+<% end %>
+</table>

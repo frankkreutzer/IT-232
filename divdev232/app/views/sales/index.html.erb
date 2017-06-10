@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<table>
+	<tr>
+		<td align='center'>
+		    <td width='100%' align='center'><h1>Sales</h1></td>
+        </td>
+	</tr>
+</table>
+
+<table width="25%" border="1" align="center">
+  <thead>
+    <tr>
+      <th>Client</th>
+      <th>Product</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sales.each do |sale| %>
+      <tr>
+        <td><%= Client.find(sale.client_id).name %></td>
+        <td align="center"><%= image_tag Product.find(sale.product_id).productimg, size: "100x100" %></td>
+        <td><%= link_to 'Show', sale %></td>
+        <td><%= link_to 'Edit', edit_sale_path(sale) %></td>
+        <td><%= link_to 'Destroy', sale, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sale', new_sale_path %>

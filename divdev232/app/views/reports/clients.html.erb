@@ -1,0 +1,27 @@
+<table>
+	<tr>
+		<td align='center'>
+		    <td width='100%' align='center'><h1>Our Clients</h1></td>
+        </td>
+	</tr>
+</table>
+
+<table width="50%" border="1" align="center">
+	<tr>
+		<th> Client Name </th>
+        <th> Email </th>
+		<th> City </th>
+		<th> State </th>
+        <th> Country </th>
+	</tr>
+
+<% @customerlist.each do |c| %>
+	<tr>
+		<td> <%= c.name %> </td>
+        <td> <%= c.email %> </td>
+		<td> <%= c.city %> </td>
+		<td> <%= c.state %> </td>
+        <td> <%= c.country %> </td>
+	</tr>
+<% end %>
+</table>

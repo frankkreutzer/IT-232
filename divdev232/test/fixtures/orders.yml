@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customerid: 1
+  saledate: 2017-01-18
+  salenotes: MyText
+
+two:
+  customerid: 1
+  saledate: 2017-01-18
+  salenotes: MyText

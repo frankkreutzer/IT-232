@@ -1,0 +1,14 @@
+<h2>Please enter the first or last name of the client</h2>
+
+  <%= form_tag(showclientproducts_productsout_path, :controller => "showclientproducts", :action => "productsout", :method => "post") do %>
+
+  <div class="field">
+    <%= label_tag :Client_Name %><br>
+    <%= text_field_tag :client_name_in %>
+  </div><br>
+
+  <div class="actions">
+    <%= submit_tag "Submit Client Name" %>
+  </div>
+
+   <% end %>
